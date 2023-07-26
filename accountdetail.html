@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/vue@3.3.4/dist/vue.global.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body class="bg-gray-200">
+    <div id="app" class="w-full h-screen ">
+        <div class="w-3/4  m-auto mt-4 p-10  bg-white rounded">
+            <h1 class="font-bold" >Account details</h1>
+            <div class="flex border-b-2 mb-5 mt-5 pb-5"  >
+                <img class="w-20 h-20 rounded-md" src="https://i.pravatar.cc/302" alt="">
+                <div class=" ml-5">
+                    <button class="rounded px-2 py-2 text-white bg-green-400 mb-5">Upload new photo</button>
+                    <p>Allowed JPG, GIF or PNG. Max size of 800k</p>
+                </div>
+            </div>
+            <div class="flex border rounded mb-5" >
+                <svg class="h-8 w-8 text-gray-700 mr-5"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round">  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />  <polyline points="22,6 12,13 2,6" /></svg>
+                <input type="text" placeholder="ten" class=" w-full h-8">
+            </div>
+            <div class="flex border rounded mb-5">
+                <svg class="h-8 w-8 text-gray-700 mr-5"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round">  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />  <polyline points="22,6 12,13 2,6" /></svg>
+                <input type="email" placeholder="email@email.com" class=" w-full h-8">
+            </div>
+            <div class="flex border rounded mb-5">
+                <svg class="h-8 w-8 text-gray-700 mr-5"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round">  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />  <polyline points="22,6 12,13 2,6" /></svg>
+                <input type="text" placeholder="DaNang" class=" w-full h-8">
+            </div>
+
+            <form class=" border rounded mb-5" >
+                <div class="flex justify-between ">
+                    <label for="it">IT</label>
+                    <input type="radio" id="it" name="fav_language" value="it">
+                </div>
+                <div class="flex justify-between ">
+                    <label for="ds">DS</label>
+                    <input type="radio" id="ds" name="fav_language" value="ds">
+                </div>
+                <div class="flex justify-between ">
+                    <label for="mo">MO</label>
+                    <input type="radio" id="mo" name="fav_language" value="mo">
+                </div>
+            </form>
+            <form class=" border rounded mb-5">
+                <div class="flex justify-between ">
+                    <label for="male">Male</label>
+                    <input type="checkbox" id="male" name="gender" value="male">
+                </div>
+                <div class="flex justify-between ">
+                    <label for="female">Female</label>
+                    <input type="checkbox" id="female" name="gender" value="female">
+                </div>
+                <div class="flex justify-between ">
+                    <label for="AH">Apache Helikopter</label>
+                    <input type="checkbox" id="AH" name="gender" value="Apache Helikopter">
+                </div>
+            </form>
+            <div class="flex">
+                <button class="rounded px-2 py-2 text-white bg-green-400 mb-5">Save change</button>
+                <button class="rounded px-2 py-2 text-white bg-gray-400 mb-5 ml-5">Reset</button>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
